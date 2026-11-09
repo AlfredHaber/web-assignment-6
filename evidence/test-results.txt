@@ -1,0 +1,29 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> alfred-haber-notes-api@1.0.0 test
+> node --test tests/api.test.js
+
+▶ CRUD, validation, malformed input and database persistence
+  ✔ GET empty list returns 200 (17.300884ms)
+  ✔ POST creates a note with 201 (8.551279ms)
+  ✔ GET list contains saved note (1.679323ms)
+  ✔ GET one returns 200 (1.655247ms)
+  ✔ PUT replaces editable fields (1.926773ms)
+  ✔ POST invalid title returns 400 (2.127392ms)
+  ✔ PUT missing content returns 400 (2.706796ms)
+  ✔ Malformed JSON returns 400 (1.960724ms)
+  ✔ Invalid ID returns 400 (1.140901ms)
+  ✔ Unknown route returns 404 (1.411644ms)
+  ✔ Missing GET and PUT return 404 (1.867664ms)
+  ✔ SQLite retains data after closing and reopening database (5.375816ms)
+  ✔ DELETE returns 200 and removes note (1.934044ms)
+  ✔ Repeated DELETE returns 404 (0.808004ms)
+✔ CRUD, validation, malformed input and database persistence (67.73686ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.004518
